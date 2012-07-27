@@ -1,0 +1,21 @@
+{
+    "hash": "f3dde7f0a690b4d3c585c787468faef7",
+    "packages": [
+        {
+            "package": "dotty/dotty",
+            "version": "v0.0.12"
+        },
+        {
+            "package": "thesmart/singleton",
+            "version": "v0.0.2"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ]
+}
