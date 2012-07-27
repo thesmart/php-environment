@@ -29,6 +29,8 @@ This runs one time at the start of your void main:
 	Env::set('facebook.namespace', 'app_name_space');
 	Env::set('facebook.url', 'https://apps.facebook.com/app_name_space');
 
+Later, you can easily access current environment variables:
+
 	// access using dot-notation
 	$facebookConfig = Env::get('facebook');
 
@@ -39,6 +41,10 @@ This runs one time at the start of your void main:
 		// go cache some shit
 	}
 
+Mix with OS environment variables to define which configuration to use:
+
+	$configToSet	= isset($_SERVER['conf']) ? $_SERVER['conf'] : 'prod';
+	require_once PATH_CONFIG . $configToSet . '.php';
 
 # Like this project?
 
